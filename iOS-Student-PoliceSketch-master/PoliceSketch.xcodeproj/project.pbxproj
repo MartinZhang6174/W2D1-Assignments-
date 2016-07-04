@@ -19,6 +19,8 @@
 		60D60731197C369000A4DE1D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D60730197C369000A4DE1D /* XCTest.framework */; };
 		60D60732197C369000A4DE1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D60711197C369000A4DE1D /* Foundation.framework */; };
 		60D60733197C369000A4DE1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D60715197C369000A4DE1D /* UIKit.framework */; };
+		9CA382021D2AE3AF00BF259A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA382011D2AE3AF00BF259A /* Launch Screen.storyboard */; };
+		9CA3822E1D2AEA1000BF259A /* PoliceSketch.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3822D1D2AEA1000BF259A /* PoliceSketch.m */; };
 		AF23D7FB19DCB73A0049AD5E /* arrow_left.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF23D7EA19DCB73A0049AD5E /* arrow_left.jpg */; };
 		AF23D7FC19DCB73A0049AD5E /* arrow_right.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF23D7EB19DCB73A0049AD5E /* arrow_right.jpg */; };
 		AF23D7FD19DCB73A0049AD5E /* eyes_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF23D7EC19DCB73A0049AD5E /* eyes_1.jpg */; };
@@ -65,6 +67,9 @@
 		60D60729197C369000A4DE1D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		60D6072F197C369000A4DE1D /* PoliceSketchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoliceSketchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D60730197C369000A4DE1D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9CA382011D2AE3AF00BF259A /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		9CA3822C1D2AEA1000BF259A /* PoliceSketch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoliceSketch.h; sourceTree = "<group>"; };
+		9CA3822D1D2AEA1000BF259A /* PoliceSketch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoliceSketch.m; sourceTree = "<group>"; };
 		AF23D7EA19DCB73A0049AD5E /* arrow_left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arrow_left.jpg; sourceTree = "<group>"; };
 		AF23D7EB19DCB73A0049AD5E /* arrow_right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arrow_right.jpg; sourceTree = "<group>"; };
 		AF23D7EC19DCB73A0049AD5E /* eyes_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eyes_1.jpg; sourceTree = "<group>"; };
@@ -143,9 +148,12 @@
 				AF23D7E919DCB73A0049AD5E /* Images */,
 				60D60720197C369000A4DE1D /* LPSAppDelegate.h */,
 				60D60721197C369000A4DE1D /* LPSAppDelegate.m */,
+				9CA382011D2AE3AF00BF259A /* Launch Screen.storyboard */,
 				60D60723197C369000A4DE1D /* Main.storyboard */,
 				60D60726197C369000A4DE1D /* LPSViewController.h */,
 				60D60727197C369000A4DE1D /* LPSViewController.m */,
+				9CA3822C1D2AEA1000BF259A /* PoliceSketch.h */,
+				9CA3822D1D2AEA1000BF259A /* PoliceSketch.m */,
 				60D60729197C369000A4DE1D /* Images.xcassets */,
 				60D60718197C369000A4DE1D /* Supporting Files */,
 			);
@@ -232,7 +240,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = LPS;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Lighthouse Labs";
 				TargetAttributes = {
 					60D6072E197C369000A4DE1D = {
@@ -270,6 +278,7 @@
 				AF23D7FF19DCB73A0049AD5E /* eyes_3.jpg in Resources */,
 				AF23D7FE19DCB73A0049AD5E /* eyes_2.jpg in Resources */,
 				AF23D80319DCB73A0049AD5E /* mouth_2.jpg in Resources */,
+				9CA382021D2AE3AF00BF259A /* Launch Screen.storyboard in Resources */,
 				AF23D80B19DCB73A0049AD5E /* nose_5.jpg in Resources */,
 				AF23D80219DCB73A0049AD5E /* mouth_1.jpg in Resources */,
 				AF23D7FD19DCB73A0049AD5E /* eyes_1.jpg in Resources */,
@@ -304,6 +313,7 @@
 				60D60722197C369000A4DE1D /* LPSAppDelegate.m in Sources */,
 				60D6071E197C369000A4DE1D /* main.m in Sources */,
 				60D60728197C369000A4DE1D /* LPSViewController.m in Sources */,
+				9CA3822E1D2AEA1000BF259A /* PoliceSketch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +372,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -422,6 +433,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PoliceSketch/PoliceSketch-Prefix.pch";
 				INFOPLIST_FILE = "PoliceSketch/PoliceSketch-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LighthouseLabs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -435,6 +447,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PoliceSketch/PoliceSketch-Prefix.pch";
 				INFOPLIST_FILE = "PoliceSketch/PoliceSketch-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LighthouseLabs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PoliceSketch.h"
 
 @interface LPSViewController : UIViewController
 
